@@ -2,16 +2,14 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RSA GUI</title>
-  <link rel="stylesheet.css"
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <div class="fields">
-    <input type="text" class="input-text" name="plaintext">
-    <label class="rsa-floating-label" for="plaintext-input">Plaintext</label>
-  </div>
-  <div class="fields">
-    <input type="prime-number" class="input-text" name="prime-number">
-    <label class="rsa-floating-label" for="plaintext-input">Plaintext</label>
-  </div>
+  <label for="input-text" class="input-text">
+    <input type="text" id="input-text" placeholder="&nbsp;"
+    <span class="label">Plain Text</span>
+    <span class="border"></span>
+  </label>
 </body>
