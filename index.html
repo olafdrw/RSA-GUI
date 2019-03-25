@@ -4,12 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RSA GUI</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,600,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <label for="input-text" class="input-text">
-    <input type="text" id="input-text" placeholder="&nbsp;"
-    <span class="label">Plain Text</span>
-    <span class="border"></span>
-  </label>
+  <div class="container">
+    <div class="titles">
+      <h1>RSA</h1>
+      <p>Inputs</p>
+    </div>
+    <form class="form">
+
+    <div class="group">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Plaintext</label>
+    </div>
+
+    <div class="group">
+      <input type="number" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Prime Number</label>
+    </div>
+
+  </form>
+  </div>
 </body>
