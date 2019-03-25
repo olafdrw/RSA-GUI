@@ -11,11 +11,12 @@ html, body {
 
 .container {
   font-family: "Roboto";
-  width: 600px;
+  width: 20%;
   margin: 30px auto 0;
   display: block;
   background: #fff;
   padding: 10px 50px 50px;
+  text-align: center;
 }
 
 h1 {
@@ -35,6 +36,7 @@ p {
 .group {
   position: relative;
   margin-bottom: 45px;
+  display: inline-block;
 }
 
 .form {
@@ -45,17 +47,25 @@ input {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 300px;
+  width: 100%;
   border: none;
-  border-bottom: 1px solid #757575;
 }
 input:focus {
   outline: none;
 }
 
+.bar2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #bdc3c7;
+  height: 2px;
+  position: absolute;
+}
+
 /* LABEL ======================================= */
 label {
-  color: #999;
+  color: #bdc3c7;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -79,14 +89,13 @@ input:valid ~ label {
 .bar {
   position: relative;
   display: block;
-  width: 300px;
+  width: 100%;
 }
 .bar:before,
 .bar:after {
   content: "";
   height: 2px;
   width: 0;
-  bottom: 1px;
   position: absolute;
   background: #e74c3c;
   transition: 0.2s ease all;
@@ -125,7 +134,7 @@ input:focus ~ .highlight {
 }
 @-moz-keyframes inputHighlighter {
   from {
-    background: #5264ae;
+    background: #e74c3c;
   }
   to {
     width: 0;
@@ -134,7 +143,7 @@ input:focus ~ .highlight {
 }
 @keyframes inputHighlighter {
   from {
-    background: #5264ae;
+    background: #e74c3c;
   }
   to {
     width: 0;
