@@ -16,9 +16,9 @@ function phi(p,q) {
 
 function generate_keypair(p,q) {
   var n = p * q;
+  var text = "";
   var e = Math.floor((Math.random() * phi(p,q)) + 1);
   var k = 2
   var d = (k*phi(p,q) + 1) / e
-  
-  return
+  document.getElementById("output").innerHTML = text;
 }
