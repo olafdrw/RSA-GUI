@@ -1,15 +1,11 @@
 // Olaf Willner, 2019
 
-function get_value(id) {
-    return parseFloat(document.getElementById(id).value);
-}
-
 function multiply() {
   var p = document.getElementsById("num1").value;
   var q = document.getElementsById("num2").value;
-  var calc = p*q;
-  document.getElementById('output').innerHTML = calc;
+  document.getElementById("output").innerHTML = p * q;
 }
+
 
 
 
