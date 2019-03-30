@@ -8,9 +8,8 @@ function multiply() {
   var p = document.getElementsById("num1").value;
   var q = document.getElementsById("num2").value;
   var calc = p*q;
-  return calc;
+  document.getElementById('ar').innerHTML = calc +
 }
-
 
 
 
