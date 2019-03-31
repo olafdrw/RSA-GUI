@@ -1,10 +1,13 @@
 // Olaf Willner, 2019
 
-function multiply() {
+function multiplyInt() {
   var p = document.getElementsById("num1").value;
   var q = document.getElementsById("num2").value;
-  document.getElementById("output").innerHTML = p * q;
+  var calc = p*q;
+  document.writeln (calc);
 }
+
+
 
 
 
