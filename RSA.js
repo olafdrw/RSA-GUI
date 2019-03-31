@@ -1,10 +1,10 @@
 // Olaf Willner, 2019
 
-function multiplyInt() {
+function generate_publicKey() {
   var p = document.getElementById("num1").value;
   var q = document.getElementById("num2").value;
-  var calc = p*q;
-  document.getElementById("output").innerHTML = calc;
+  var n = p*q;
+  document.getElementById("output").innerHTML = n;
 }
 
 

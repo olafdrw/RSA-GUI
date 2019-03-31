@@ -33,10 +33,9 @@ h2 {
   font-size: 20px;
 }
 
-#output {
-  text-align: center;
-  margin-bottom: 0px;
-  background-color: #0000000
+.output {
+  margin-top: 20px;
+  color: #000000;
 }
 
 /* form starting stylings ------------------------------- */
