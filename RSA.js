@@ -6,6 +6,7 @@ function generate_publicKey() {
   var n = p*q;
   var e = 3;
   var phi = (p-1)*(q-1);
+  var d = (math.pow(e,-1)) % phi
   document.getElementById("output").textContent = "Public Key = (" + n + "," + e + ")";
 }
 
