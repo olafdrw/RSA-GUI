@@ -6,7 +6,7 @@
   <title>RSA GUI</title>
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,600,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
-  <script type="text/javascript" src="rsa.js"></script>
+  <script type="text/javascript" src="RSA.js"></script>
 </head>
 <body>
   <div class="container">
@@ -36,17 +36,9 @@
         <span class="bar"></span>
         <label>Second Prime Number</label>
       </div>
-      <button type="button" onlick="multiply(p,q)">Calculate</button>
+      <button type="button" onclick="multiplyInt()">Calculate</button>
       <p id = "output"></p>
     </form>
-    <script>
-      function multiplyInt() {
-      var p = document.getElementsById("num1").value;
-      var q = document.getElementsById("num2").value;
-      var calc = parseInt(p) * parseInt(q);
-      document.getElementById("output").innerHTML = +calc;
-    }
-    </script>
   </div>
 </body>
 </html>
