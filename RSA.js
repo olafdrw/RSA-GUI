@@ -4,7 +4,9 @@ function generate_publicKey() {
   var p = document.getElementById("num1").value;
   var q = document.getElementById("num2").value;
   var n = p*q;
-  document.getElementById("output").innerHTML = n;
+  var e = 3;
+  var phi = (p-1)*(q-1);
+  document.getElementById("output").textContent = "Public Key = (" + n + "," + e + ")";
 }
 
 
