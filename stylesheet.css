@@ -15,7 +15,12 @@ html, body {
   margin: 30px auto 0;
   background: #fff;
   padding: 10px 0px 50px;
-  text-align: center;
+  display: block;
+  justify-content: center;
+}
+
+.container .form {
+  display: block;
   align-items: center;
 }
 
@@ -26,7 +31,7 @@ nav {
 
 .title {
   float: left;
-  padding: 5px;
+  padding: 0px;
   margin-left: 0px;
   margin-top: 0px;
 }
@@ -95,6 +100,7 @@ nav ul li a {
 .output {
   margin-top: 50px;
   color: #000000;
+  font-size: 16px;
 }
 
 /* form starting stylings ------------------------------- */
