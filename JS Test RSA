@@ -1,0 +1,10 @@
+function myFunction() {
+  var p = 53
+  var q = 59
+  var n = p*q;
+  const e = Math.pow(2,16) + 1;
+  var phi = (p-1)*(q-1);
+  var d = (Math.pow(e,-1)) % phi;
+  var d = (Math.pow(e,-1)) % phi;
+  console.log(d);
+}
