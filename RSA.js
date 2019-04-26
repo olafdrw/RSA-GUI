@@ -10,3 +10,8 @@ function generate_keyPair() {
   document.getElementById("output1").innerHTML = "Public Key = (<strong>" + n + "</strong>,<strong>" + e + "</strong>)";
   document.getElementById("output2").innerHTML = "Private Key = (<strong>" + d + "</strong>)";
 }
+
+function encryptText() {
+  var plaintext = document.getElementById("plaintext");
+  
+}

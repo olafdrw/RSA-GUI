@@ -6,10 +6,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge"
-  <title>RSA GUI</title>
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,600,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
   <script type="text/javascript" src="RSA.js"></script>
+  <title>RSA GUI</title>
 </head>
 <body>
   <div class="container">
@@ -27,10 +27,10 @@
           </div>
           <div class="nav-wrapper">
             <ul class="sections">
-              <li><a href="#" class="link">About</a></li>
-              <li><a href="#" class="link">Decrypt</a></li>
-              <li><a href="#" class="link">Encrypt</a></li>
               <li><a href="#" class="link">Generate KeyPairs</a></li>
+              <li><a href="#" class="link">Encrypt</a></li>
+              <li><a href="#" class="link">Decrypt</a></li>
+              <li><a href="#" class="link">About</a></li>
             </ul>
           </div>
         </div>
@@ -39,7 +39,7 @@
     <form class="form">
 
       <div class="group">
-        <input type="text" required name="data">
+        <input type="text" required name="data" id="plaintext">
         <span class="bar2"></span>
         <span class="bar"></span>
         <label>Data</label>
