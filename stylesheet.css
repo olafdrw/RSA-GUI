@@ -55,7 +55,7 @@ nav {
   -webkit-box-direction: normal;
 }
 
-.title {
+.titles {
 position:relative;
 float:left;
 padding:0;
@@ -63,7 +63,7 @@ margin-left:0;
 margin-top:0;
 }
 
-.title a {
+.titles a {
 color:#000;
 text-transform:uppercase;
 font-weight:700;
@@ -72,7 +72,7 @@ letter-spacing:1px;
 text-decoration:none;
 }
 
-.title a:hover {
+.titles a:hover {
 color:#4B4B4B;
 }
 
@@ -272,9 +272,6 @@ animation:inputHighlighter .3s ease;
 /* RESPONSIVE NAV */
 
 @media screen and (max-width: 500px) {
-      .title {
-            padding: 0;
-      }
 
       .nav-wrapper {
             position: fixed;
