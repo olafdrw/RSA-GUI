@@ -1,5 +1,3 @@
-<!-- Olaf Willner, 2019 -->
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -24,12 +22,12 @@
             <i></i>
           </label>
           <div class="titles">
-            <a href="#">RSA</a>
+            <a href="index.html">RSA</a>
           </div>
           <div class="nav-wrapper">
             <ul class="sections">
-              <li><a href="#" class="link">Generate KeyPairs</a></li>
-              <li><a href="encrypt.html" class="link">Encrypt</a></li>
+              <li><a href="index.html" class="link">Generate KeyPairs</a></li>
+              <li><a href="#" class="link">Encrypt</a></li>
               <li><a href="#" class="link">Decrypt</a></li>
               <li><a href="#" class="link">About</a></li>
             </ul>
@@ -38,6 +36,13 @@
       </div>
     </nav>
     <form class="form">
+
+      <div class="group">
+        <input type="text" required name="data" id="plaintext">
+        <span class="bar2"></span>
+        <span class="bar"></span>
+        <label>Data</label>
+      </div>
 
       <div class="group">
         <input type="number" required id="num1">
@@ -52,9 +57,8 @@
         <span class="bar"></span>
         <label>Second Prime Number</label>
       </div>
-      <button type="button" class="public-button" onclick="generate_keyPair()">Generate Key Pair</button>
-      <p class="output1" id = "output1"></p>
-      <p class="output2" id = "output2"></p>
+      <button type="button" class="public-button" onclick="encryptText()">Encrypt text</button>
+      <p class="output3" id = "output3"></p>
     </form>
   </div>
 </body>
