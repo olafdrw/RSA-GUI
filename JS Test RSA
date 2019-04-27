@@ -7,3 +7,5 @@ function myFunction() {
   var d = (Math.pow(e,-1)) % phi;
   var d = (Math.pow(e,-1)) % phi;
 }
+
+function 
