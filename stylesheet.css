@@ -16,6 +16,7 @@ html, body {
   padding: 0;
   display: block;
   text-align: center;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -241,32 +242,49 @@ width:100%;
 }
 
 .bar:before,.bar:after {
-content:"";
-height:2px;
-width:0;
-position:absolute;
-background:#000;
-transition:.2s ease all;
--moz-transition:.2s ease all;
--webkit-transition:.2s ease all;
+  content:"";
+  height:2px;
+  width:0;
+  position:absolute;
+  background:#000;
+  transition:.2s ease all;
+  -moz-transition:.2s ease all;
+  -webkit-transition:.2s ease all;
 }
 
 .bar:before {
-left:50%;
+  left:50%;
 }
 
 .bar:after {
-right:50%;
+  right:50%;
 }
 
 input:focus ~ .bar:before,input:focus ~ .bar:after {
-width:50%;
+  width:50%;
 }
 
 input:focus ~ .highlight {
--webkit-animation:inputHighlighter .3s ease;
--moz-animation:inputHighlighter .3s ease;
-animation:inputHighlighter .3s ease;
+  -webkit-animation:inputHighlighter .3s ease;
+  -moz-animation:inputHighlighter .3s ease;
+  animation:inputHighlighter .3s ease;
+}
+
+
+.heading {
+  padding-bottom: 10px;
+  margin:4px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  float: left;
+}
+
+.sub {
+  padding-bottom: 20px;
+  color:#A5A5A5;
+  font-size:16px;
+  float: left;
 }
 
 /* RESPONSIVE NAV */
