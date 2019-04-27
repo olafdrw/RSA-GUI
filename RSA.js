@@ -22,7 +22,7 @@ function letterValue(str){
 }
 
 function encryptText() {
-  var plaintext = document.getElementById("plaintext");
-  var n = letterValue(plaintext)
+  var plaintext = document.getElementById('plaintext');
+  var n = letterValue(String(plaintext))
   document.getElementById("output3").innerHTML = "Encrypted text = " + n ;
 }
