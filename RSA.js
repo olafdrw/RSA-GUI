@@ -13,11 +13,13 @@ function generate_keyPair() {
   var p = document.getElementById("num1").value;
   var q = document.getElementById("num2").value;
   var n = p*q;
-  const e = Math.pow(2,16) + 1;
+  const e = Math.pow(2, 16) + 1;
   var phi = (p-1)*(q-1);
   var d = modInverse(e, phi);
   document.getElementById("output1").innerHTML = "Public Key = (<strong>" + n + "</strong>,<strong>" + e + "</strong>)";
   document.getElementById("output2").innerHTML = "Private Key = (<strong>" + d + "</strong>)";
+  return n;
+  return e;
 }
 
 function letterValue(str){
@@ -32,8 +34,7 @@ function letterValue(str){
 
 function encryptText() {
   var plaintext = document.getElementById('plaintext').value;
-  var n = letterValue(String(plaintext));
-  document.getElementById("output3").innerHTML = "Encrypted text = " + n;
+  var c = letterValue(String(plaintext));
+  var ciphertext = c.map((el) => Math.pow(el, (Math.pow(2, 16) + 1)) % n);
+  document.getElementById("output3").innerHTML = "Encrypted text = " + ciphertext;
 }
-
-// FUNCTIONAL!!
