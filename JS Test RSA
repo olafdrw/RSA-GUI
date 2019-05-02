@@ -9,19 +9,6 @@ var modInverse = function(a, b) {
     }
 }
 
-function generate_keyPair() {
-  var p = document.getElementById("num1").value;
-  var q = document.getElementById("num2").value;
-  var n = p*q;
-  const e = Math.pow(2, 16) + 1;
-  var phi = (p-1)*(q-1);
-  var d = modInverse(e, phi);
-  document.getElementById("output1").innerHTML = "Public Key = (<strong>" + n + "</strong>,<strong>" + e + "</strong>)";
-  document.getElementById("output2").innerHTML = "Private Key = (<strong>" + d + "</strong>)";
-  return n;
-  return e;
-}
-
 function letterValue(str){
     var anum={
         a: 1, b: 2, c: 3, d: 4, e: 5, f: 6, g: 7, h: 8, i: 9, j: 10, k: 11,
@@ -33,16 +20,12 @@ function letterValue(str){
 }
 
 function encryptText() {
-  var p = document.getElementById("num1").value;
-  var q = document.getElementById("num2").value;
+  var p = 59
+  var q = 53
   var n = p*q;
   const e = Math.pow(2, 16) + 1;
-  var plaintext = document.getElementById('plaintext').value;
-  var c = letterValue(String(plaintext));
-  var ciphertext = c.map((el) => Math.pow(el, e) % n);
-  document.getElementById("output3").innerHTML = "Encrypted text = " + ciphertext;
+  var plaintext = letterValue(String('hello'))
+  var ciphertext = plaintext.map((el) => el*5);
 }
 
-
-
-console.log(generate_keyPair())
+console.log(encryptText())
