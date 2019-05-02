@@ -33,8 +33,12 @@ function letterValue(str){
 }
 
 function encryptText() {
+  var p = document.getElementById("num1").value;
+  var q = document.getElementById("num2").value;
+  var n = p*q;
+  const e = Math.pow(2, 16) + 1;
   var plaintext = document.getElementById('plaintext').value;
   var c = letterValue(String(plaintext));
-  var ciphertext = c.map((el) => Math.pow(el, (Math.pow(2, 16) + 1)) % n);
+  var ciphertext = c.map((el) => Math.pow(el, e) % n);
   document.getElementById("output3").innerHTML = "Encrypted text = " + ciphertext;
 }
