@@ -1,10 +1,5 @@
 /* Olaf Willner, 2019 */
 
-* {
-  box-sizing: border-box;
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
 *,::after,::before {
   box-sizing: border-box;
 }
@@ -20,7 +15,6 @@ html, body {
 }
 
 .container {
-  font-family: 'IBM Plex Sans',sans-serif;
   margin: 5vw;
   background: #fff;
   padding: 0px;
@@ -57,16 +51,16 @@ nav {
 }
 
 .titles {
-position:relative;
-float:left;
-padding:0;
-margin-left:0;
-margin-top:0;
+  font-family: "Merriweather", sans-serif;
+  position:relative;
+  float:left;
+  padding:0;
+  margin-left:0;
+  margin-top:0;
 }
 
 .titles a {
 color:#000;
-text-transform:uppercase;
 font-weight:700;
 font-size:32px;
 letter-spacing:1px;
