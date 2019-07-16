@@ -1,0 +1,71 @@
+<!-- Olaf Willner, 2019 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script type="text/javascript" src="RSA.js"></script>
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <title>RSA GUI</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="container-two">
+        <div class="container-nav">
+          <input type="checkbox" id="nav" class="hidden">
+          <label for="nav" class="nav-btn">
+            <i></i>
+            <i></i>
+            <i></i>
+          </label>
+          <div class="titles">
+            <a href="#">RSA</a>
+          </div>
+          <div class="nav-wrapper">
+            <ul class="sections">
+              <li><a href="#" class="link">Generate KeyPairs</a></li>
+              <li><a href="encrypt.html" class="link">Encrypt</a></li>
+              <li><a href="#" class="link">Decrypt</a></li>
+              <li><a href="#" class="link">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--
+    <div class="presentation">
+      <p class="heading">Generate KeyPair</h2>
+      <p class="sub">Enter two distinct prime numbers</p>
+    </div>
+    -->
+    <form class="form">
+
+      <div class="group">
+        <input type="number" required id="num1">
+        <span class="bar2"></span>
+        <span class="bar"></span>
+        <label>Prime Number</label>
+      </div>
+
+      <div class="group">
+        <input type="number" required id="num2">
+        <span class="bar2"></span>
+        <span class="bar"></span>
+        <label>Second Prime Number</label>
+      </div>
+      <div class="button">
+        <button type="button" class="public-button" onclick="generate_keyPair()">Generate Key Pair</button>
+      </div>
+      <div class="output">
+        <p class="output1" id = "output1"></p>
+        <p class="output2" id = "output2"></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
