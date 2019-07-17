@@ -60,7 +60,7 @@ nav {
 }
 
 .titles a {
-color:#000;
+color:#090832;
 font-weight:700;
 font-size:32px;
 letter-spacing:1px;
@@ -72,11 +72,12 @@ color:#4B4B4B;
 }
 
 .nav-wrapper {
--webkit-box-flex:1;
-flex:1 1 100%;
-text-align:right;
-position:relative;
-padding-left:20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  -webkit-box-flex:1;
+  flex:1 1 100%;
+  text-align:right;
+  position:relative;
+  padding-left:20px;
 }
 
 nav ul {
@@ -177,7 +178,7 @@ position:absolute;
 margin-top:20px;
 display:inline-block;
 color:#FFF;
-background-color:#2c3e50;
+background-color:#090832;
 border:none;
 border:solid 1px #4c4c4c;
 font-size:12px;
