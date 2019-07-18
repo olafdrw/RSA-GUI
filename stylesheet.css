@@ -154,11 +154,18 @@ header {
   font-weight: 500;
   display: block;
   float: left;
+  margin-left: 40px;
 }
 
 li {
   display: list-item;
   text-align: -webkit-match-parent;
+}
+
+.global-header a, {
+    text-decoration: none;
+    -webkit-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
 }
 
 .nav-item>a {
@@ -172,10 +179,23 @@ li {
   -webkit-box-align: end;
   align-items: flex-end;
   box-sizing: border-box;
+  color: #090832;
 }
 
-.nav-item.-active>a:after {
+.nav-item>a {
+  color: #7F8FA6;
+}
+
+.nav-item.-active>a, .nav-item>a:hover {
+  color: #090832;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+.nav-item.-active>a:after, .nav-item>a:hover:after {
   background: #090832;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 .nav-item>a:after {
