@@ -96,6 +96,7 @@ header {
 }
 
 .logo {
+  position: relative;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -210,7 +211,7 @@ li {
 }
 
 .outer {
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom:80px;
   width: 100%;
   min-height: 450px;
@@ -219,4 +220,34 @@ li {
 .wrapper {
   margin-left: auto;
   margin-right: auto;
+}
+
+.universal-header {
+  -webkit-box-align: center;
+  align-items: left;
+  text-align: left;
+  width: 85%;
+  margin-left: 18%;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.text-wrapper {
+  -webkit-box-align: left;
+  align-items: left;
+}
+
+.text-wrapper, .title {
+  word-break: break-word;
+}
+
+.title {
+  font-family: "Merriweather", Georgia, 'Times New Roman', serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #090832;
 }
