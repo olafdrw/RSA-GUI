@@ -375,24 +375,58 @@ input:focus ~ .highlight {
   -ms-transition:background-color .14s ease-out,color .14s ease-out;
   -o-transition:background-color .14s ease-out,color .14s ease-out;
   transition:background-color .14s ease-out,color .14s ease-out;
-  }
+s}
 
-  .public-button:hover {
+.public-button:hover {
   background-color:#3D3C5D;
   color:#FFF;
-  }
+}
 
-  .global-footer {
-    padding-top: 72px;
-    background-color: #F5F6FA;
-  }
+.output-keypair-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #090832;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  display: block;
+  margin-right: 3%;
+  margin-left: 18%;
+  height:100%;
+  width: 85%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.output-keypair-text-wrapper {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.35rem;
+  color: #FFF;
+}
+
+.output-title {
+  color: #FFF;
+}
+
+.global-footer {
+  padding-top: 72px;
+  background-color: #F5F6FA;
+}
 
 .footer-main {
   height: 100%;
   width: 85%;
   margin: 0 auto;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 10pt;
+  font-weight: 400;
+  color: #090832;
 }
 
 .footer-top {
+  padding-bottom: 42px;
+}
+
+.footer-bottom {
   padding-bottom: 42px;
 }
