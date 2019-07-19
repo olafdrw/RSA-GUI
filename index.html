@@ -56,30 +56,32 @@
     </section>
     <!-- END NAVIGATION WHITE BAR -->
   </header>
-  <div class="container">
-    <form class="form">
+  <div class="outer">
+    <div class="wrapper"
+      <form class="form">
 
-      <div class="group">
-        <input type="number" required id="num1">
-        <span class="bar2"></span>
-        <span class="bar"></span>
-        <label>Prime Number</label>
-      </div>
+        <div class="group">
+          <input type="number" required id="num1">
+          <span class="bar2"></span>
+          <span class="bar"></span>
+          <label>Prime Number</label>
+        </div>
 
-      <div class="group">
-        <input type="number" required id="num2">
-        <span class="bar2"></span>
-        <span class="bar"></span>
-        <label>Second Prime Number</label>
-      </div>
-      <div class="button">
-        <button type="button" class="public-button" onclick="generate_keyPair()">Generate Key Pair</button>
-      </div>
-      <div class="output">
-        <p class="output1" id = "output1"></p>
-        <p class="output2" id = "output2"></p>
-      </div>
-    </form>
+        <div class="group">
+          <input type="number" required id="num2">
+          <span class="bar2"></span>
+          <span class="bar"></span>
+          <label>Second Prime Number</label>
+        </div>
+        <div class="button">
+          <button type="button" class="public-button" onclick="generate_keyPair()">Generate Key Pair</button>
+        </div>
+        <div class="output">
+          <p class="output1" id = "output1"></p>
+          <p class="output2" id = "output2"></p>
+        </div>
+      </form>
+    </div>
   </div>
 </body>
 </html>
