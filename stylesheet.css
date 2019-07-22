@@ -382,22 +382,6 @@ s}
   color:#FFF;
 }
 
-/* .output-keypair-wrapper {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  background-color: #090832;
-  padding-left: 0;
-  padding-right: 0;
-  float: left;
-  display: block;
-  margin-right: 3%;
-  margin-left: 18%;
-  height:100%;
-  width: 85%;
-  overflow: auto;
-  box-sizing: border-box;
-} */
-
 .output-keypair-wrapper {
   margin-left: auto;
   margin-right: auto;
