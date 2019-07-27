@@ -405,6 +405,7 @@ s}
   margin-top: 50px;
   margin-bottom: 50px;
   position: relative;
+  float: none;
 }
 
 .output-keypair-text-wrapper {
@@ -412,16 +413,15 @@ s}
   font-size: 1.35rem;
   color: #FFF;
   margin-top: 1em;
-  float: left;
   position: relative;
+  float: none;
 }
 
 .output-title {
   color: #FFF;
   z-index:2;
   position: relative;
-  float: left;
-  clear: left;
+  float: none;
 }
 
 .output {
