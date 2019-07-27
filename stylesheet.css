@@ -391,6 +391,7 @@ s}
   display: block;
   padding-right: 3%;
   width: 85%;
+  height: 200px;
   padding-left: 18%;
   clear: both;
   background-color: #090832;
@@ -404,8 +405,6 @@ s}
   height: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
-  position: relative;
-  float: none;
 }
 
 .output-keypair-text-wrapper {
@@ -413,15 +412,14 @@ s}
   font-size: 1.35rem;
   color: #FFF;
   margin-top: 1em;
-  position: relative;
-  float: none;
+  display: block;
 }
 
 .output-title {
   color: #FFF;
   z-index:2;
   position: relative;
-  float: none;
+  display: block;
 }
 
 .output {
