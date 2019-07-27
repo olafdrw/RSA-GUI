@@ -5,11 +5,13 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: auto;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a {
@@ -122,6 +124,7 @@ header {
   width: 85%;
   margin-left: 7%;
   float: none;
+  border: none;
 }
 
 .global-nav, .navigation{
@@ -383,41 +386,51 @@ s}
 }
 
 .output-keypair-wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 40px;
+  float: left;
+  display: block;
+  padding-right: 3%;
+  width: 85%;
+  padding-left: 18%;
+  clear: both;
   background-color: #090832;
-  height: 300px;
+  z-index: 0;
+  position: relative;
 }
 
 .output-keypair {
-  -webkit-box-align: left;
-  -ms-flex-align: left;
-  align-items: left;
-  text-align: left;
-  width: 85%;
-  margin-left: 18%;
-  padding-left: 0;
-  padding-right: 0;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  overflow: auto;
-  box-sizing: border-box;
+  flex-wrap: wrap;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
 }
 
 .output-keypair-text-wrapper {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.35rem;
   color: #FFF;
-  width: 100%;
+  margin-top: 1em;
+  float: left;
+  position: relative;
 }
 
 .output-title {
   color: #FFF;
+  z-index:2;
+  position: relative;
+  float: left;
+  clear: left;
+}
+
+.output {
+  margin-top: 20px;
+  z-index:2;
 }
 
 .global-footer {
+  margin-top: 0px;
   padding-top: 72px;
   background-color: #F5F6FA;
 }
