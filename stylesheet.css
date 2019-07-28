@@ -435,10 +435,6 @@ s}
   height: 100%;
   width: 85%;
   margin: 0 auto;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 10pt;
-  font-weight: 400;
-  color: #090832;
 }
 
 .footer-top {
@@ -447,4 +443,8 @@ s}
 
 .footer-bottom {
   padding-bottom: 42px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 10pt;
+  font-weight: 400;
+  color: #090832;
 }
