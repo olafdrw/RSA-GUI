@@ -391,7 +391,7 @@ s}
   display: block;
   padding-right: 3%;
   width: 85%;
-  height: 200px;
+  height: 300px;
   padding-left: 18%;
   clear: both;
   background-color: #090832;
@@ -400,11 +400,10 @@ s}
 }
 
 .output-keypair {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
+  display: block;
   margin-top: 50px;
   margin-bottom: 50px;
+  height: 100%;
 }
 
 .output-keypair-text-wrapper {
@@ -415,11 +414,13 @@ s}
   display: block;
 }
 
-.output-title {
-  color: #FFF;
-  z-index:2;
+.output-keypair-title-wrapper {
   position: relative;
   display: block;
+}
+
+.output-title {
+  color: #FFF;
 }
 
 .output {
