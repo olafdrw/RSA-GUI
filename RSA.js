@@ -39,7 +39,7 @@ function encryptText(text) {
   const e = 2n ** 16n + 1n;
   var c = letterValue(String(text));
   var ciphertext = c.map(el => (BigInt(el) ** e) % n);
-  return ciphertext;
+  document.getElementById("output3").innerHTML = "Encrypted text = " + ciphertext;
 }
 
 console.log(encryptText("abc").map(e => e.toString()));
