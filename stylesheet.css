@@ -316,7 +316,7 @@ label {
 input:focus ~ label,input:valid ~ label {
   top:-20px;
   font-size:14px;
-  color:#000;
+  color:#090832;
 }
 
 .bar {
@@ -331,7 +331,7 @@ input:focus ~ label,input:valid ~ label {
   height:2px;
   width:0;
   position:absolute;
-  background:#000;
+  background:#090832;
   transition:.2s ease all;
   -moz-transition:.2s ease all;
   -webkit-transition:.2s ease all;
