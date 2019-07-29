@@ -37,7 +37,7 @@ function encryptText() {
   var q = document.getElementById("num2").value;
   var n = p*q;
   const e = Math.pow(2, 16) + 1;
-  var plaintext = document.getElementById('plaintext').value;
+  var plaintext = document.getElementById('plaintext');
   var c = letterValue(String(plaintext));
   var ciphertext = c.map((el) => Math.pow(el, e) % n);
   document.getElementById("output3").innerHTML = "Encrypted text = " + ciphertext;
