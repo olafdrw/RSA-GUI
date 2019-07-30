@@ -1,41 +1,45 @@
-function generateKeyPair() {
-  // choose two distinct primes: p, q
-  const p = BigInt(document.getElementById("num1").value);
-  const q = BigInt(document.getElementById("num2").value);
-  const n = p * q;
-  const phi = (p - 1n) * (q - 1n);
+// Olaf Willner, 2019
 
-  // in non-mathematical terms:
-  // choose two integer numbers e,d so that
-  // gcd(e, phi) == 1
-  // e != d
-  // (e*d) % phi == 1
-  const e = 3n;
+var modInverse = function(a, b) {
+    a %= b;
+    for (var x = 1; x < b; x++) {
+        if ((a*x)%b == 1) {
+            return x;
+        }
+    }
+}
+
+function generate_keyPair() {
+  var p = document.getElementById("num1").value;
+  var q = document.getElementById("num2").value;
+  var n = p*q;
+  const e = Math.pow(2, 16) + 1;
+  var phi = (p-1)*(q-1);
   var d = modInverse(e, phi);
-
-  // then this will be your private / public keys:
-  const privateKey = {d, n};
-  const publicKey = {e, n};
   document.getElementById("output1").innerHTML = "Public Key = (<strong>" + n + "</strong>,<strong>" + e + "</strong>)";
   document.getElementById("output2").innerHTML = "Private Key = (<strong>" + d + "</strong>)";
+  return n;
+  return e;
 }
 
-function encrypt(message) {
-  let chars = message.split('');
-  return chars.map(c => {
-    let charValue = BigInt(c.charCodeAt(0));
-    return (charValue ** publicKey.e) % publicKey.n;
-  });
+function letterValue(str){
+    if(str.length== 1) {
+      if(str >= "a" && str <= "z")
+        return str.charCodeAt(0) - 'a'.charCodeAt(0) + 1;
+      else
+        return '';
+    }
+    return str.split('').map(letterValue);
 }
 
-function decrypt(message) {
-  return message.map(c => {
-    let charCode = (c ** privateKey.d) % privateKey.n;
-    return String.fromCharCode(Number(charCode));
-  }).join('');
+function encryptText(text) {
+  var p = BigInt(document.getElementById("num1").value);
+  var q = BigInt(document.getElementById("num2").value);
+  var n = p*q;
+  const e = 2n ** 16n + 1n;
+  var c = letterValue(String(text));
+  var ciphertext = c.map(el => (BigInt(el) ** e) % n);
+  document.getElementById("output3").innerHTML = "Encrypted text = " + ciphertext;
 }
 
-let message = "i love cookies";
-let crypt = encrypt(message);
-console.log("Encrypted: ", crypt.map(e => e.toString()));
-console.log("Decrypted: ", decrypt(crypt));
+console.log(encryptText("abc").map(e => e.toString()));
