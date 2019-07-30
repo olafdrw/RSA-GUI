@@ -1,4 +1,4 @@
-// Olaf Willner, 2019
+// GENERATE KEYPAIRS
 
 function generateKeyPair() {
   // choose two distinct primes: p, q
