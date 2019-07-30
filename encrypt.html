@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,600,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
-  <script type="text/javascript" src="RSA.js"></script>
+  <script type="text/javascript" src="encrypt.js"></script>
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <title>Hades</title>
 </head>
@@ -87,7 +87,7 @@
             <label>Second Prime Number</label>
           </div>
           <div class="button">
-            <button type="button" class="public-button" onclick="encryption">Encrypt Message</button>
+            <button type="button" class="public-button" onclick="encrypt(); generateKeyPair();">Encrypt Message</button>
           </div>
         </form>
       </section>
