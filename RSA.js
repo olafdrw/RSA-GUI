@@ -18,15 +18,6 @@ function generateKeyPair() {
   // then this will be your private / public keys:
   const publicKey = {e, n};
   const privateKey = {d, n};
-  return publicKey;
-  return privateKey;
   document.getElementById("output1").innerHTML = "Public Key = (<strong>" + e + "</strong>,<strong>" + n + "</strong>)";
   document.getElementById("output2").innerHTML = "Private Key = (<strong>" + d + "</strong>,<strong>" + n + "</strong>)";
-}
-
-function decrypt(message) {
-  return message.map(c => {
-    let charCode = (c ** privateKey.d) % privateKey.n;
-    return String.fromCharCode(Number(charCode));
-  }).join('');
 }
