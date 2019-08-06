@@ -403,7 +403,7 @@ s}
   height: 100%;
 }
 
-.output-keypair-text-wrapper {
+.output-keypair-text-wrapper, .output3 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.35rem;
   color: #FFF;
