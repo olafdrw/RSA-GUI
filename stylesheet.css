@@ -1,7 +1,12 @@
 /* Olaf Willner, 2019 */
 
-html, body {
-  height: 100%;
+html {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   overflow: auto;
@@ -261,6 +266,16 @@ li {
   clear: both;
 }
 
+.about-main {
+  margin-top: 0px;
+  float: left;
+  display: block;
+  margin-right: 3.07692%;
+  width: 85%;
+  margin-left: 18%;
+  clear: both;
+}
+
 /* input/output form */
 
 .group {
@@ -423,6 +438,14 @@ s}
 .output {
   margin-top: 20px;
   z-index:2;
+}
+
+.body-text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.25rem;
+  color: #090832;
+  margin-top: 1em;
+  display: block;
 }
 
 .global-footer {
