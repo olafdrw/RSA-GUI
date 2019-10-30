@@ -375,7 +375,6 @@ input:focus ~ .highlight {
   display:inline-block;
   color:#FFF;
   background-color:#090832;
-  border:none;
   border:solid 1px #4c4c4c;
   font-size:12px;
   text-transform:uppercase;
@@ -389,7 +388,7 @@ input:focus ~ .highlight {
   -ms-transition:background-color .14s ease-out,color .14s ease-out;
   -o-transition:background-color .14s ease-out,color .14s ease-out;
   transition:background-color .14s ease-out,color .14s ease-out;
-s}
+}
 
 .public-button:hover {
   background-color:#3D3C5D;
